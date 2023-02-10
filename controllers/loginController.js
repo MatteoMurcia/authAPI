@@ -72,7 +72,7 @@ const controller = {
             let user = await getUser(username);
 
             if (!user) {
-                return res.status(400).json({ status: 'failure', message: 'Invalid username or password' });
+                return res.status(400).json({ status: 'failure', message: 'Invalid username' });
               }
 
             user.status = false;

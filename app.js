@@ -9,7 +9,7 @@ app.use(express.json());
 const loginRoutes = require('./routers/loginRouter');
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Hello!');
 });
 
 app.use("/auth",loginRoutes);
