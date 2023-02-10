@@ -2,13 +2,13 @@
 
 > Api exercise for authentication backend
 
-## 📚 Prerequisites
+## 📚 Pre-requisites
 
-- Node (recomended version 16.17) ([Install from here](https://nodejs.org/es/))
+- Node (recommended version 16.17) ([Install from here](https://nodejs.org/es/))
 
 ## 🏗 Installation
 
-onece you clone the proyect you should install the following modules:
+once you clone the proyect you should install the following modules:
 
 ```bash
 #you need to setup express, bcrypt and jsonwebtoken
@@ -25,17 +25,17 @@ First you have tu run the server with the command:
 npm start
 ```
 
-For testing we have a test user:
+For testing, we have a test user:
 
 - user: Test
 
 - password: 1234
 
-The user will have a nother data called **status**, if the user had logged in previously the status will be **true** and when the user log out it will became **false**.
+The user will have another data called **status**, if the user had logged in previously the status will be **true** and, when the user log out it will became **false**.
 
 ### login
 
-You can call it using the method **POST** with the path **/auth/login** and in the body send a json like this:
+You can call it using the method **POST** with the path **/auth/login** and, in the body send a json like this:
 
 ```json
 {
@@ -43,7 +43,7 @@ You can call it using the method **POST** with the path **/auth/login** and in t
   "password":"1234"
 }
 ```
-if the login is ok it will return a status 200 and a json with a JWT like this:
+If the login is ok, it will return a status 200 and a json with a JWT like this:
 
 ```json
 {
@@ -52,7 +52,7 @@ if the login is ok it will return a status 200 and a json with a JWT like this:
 }
 ```
 
-If somthing goes wrong with the login will return a status 400 and one of the folowwing answers:
+If somthing goes wrong with the login, it will return a status 400 and one of the folowwing answers:
 
 ```json
 {
@@ -69,7 +69,7 @@ Any other mistake will return a status 500.
 
 # logout
 
-You can call it using the method **POST** with the path **/auth/logout** and in the body send a json like this:
+You can call it using the method **POST** with the path **/auth/logout** and, in the body send a json like this:
 
 ```json
 {
@@ -77,7 +77,7 @@ You can call it using the method **POST** with the path **/auth/logout** and in 
 }
 ```
 
-if the  user name dosen't exist it will return a status 400 and a message like this:
+if the  user name dosen't exist, it will return a status 400 and a message like this:
 
 ```json
 {
@@ -90,7 +90,7 @@ Any other mistake will return a status 500.
 
 # register
 
-if you want to test with another user you can create your own user with this method, You can call it using the method **POST** with the path **/auth/logout** and in the body send a json like this:
+if you want to test with another user, you can create your own user with this method. You can call it using the method **POST** with the path **/auth/register** and, in the body send a json like this:
 
 ```json
 {
